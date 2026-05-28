@@ -6,14 +6,14 @@ body {
     justify-content: center; 
     align-items: center; 
     min-height: 100vh; 
-    background-color: #f0f0f0; 
+    background-color: #ffffff; 
     font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
 }
 
 /* タイトルの設定（画面幅に合わせてサイズが自動調整されます） */
 h1 {
     font-size: clamp(24px, 5vw, 32px); 
-    color: #f14a55f4; 
+    color: #f05050; 
     font-weight: bold;
     margin: 20px 0;
     text-align: center;
@@ -40,9 +40,64 @@ model-viewer {
     }
 }
 
-/*　フッター　*/
+/* --- 💡 追加：操作説明ガイドのスタイル --- */
+.guide-container {
+    width: 90%;
+    max-width: 800px;
+    background-color: #f8f9fa; /* 薄いグレーの背景で区切る */
+    border-radius: 12px;
+    padding: 15px 20px;
+    margin-bottom: 20px; /* 3Dモデルとの間隔 */
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.guide-container h2 {
+    font-size: 14px;
+    color: #4a4a4a;
+    margin: 0 0 10px 0;
+    text-align: center;
+}
+
+.guide-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.guide-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+}
+
+.guide-item .icon {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.guide-item p {
+    font-size: 11px;
+    color: #666666;
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* スマホ用のレスポンシブ微調整 */
+@media (max-width: 600px) {
+    .guide-container {
+        width: 95%;
+        padding: 12px 10px;
+    }
+    .guide-item p {
+        font-size: 10px; /* スマホでは文字を少し小さくして収める */
+    }
+}
+
+/* フッター */
 footer {
     margin-top: 30px;
     font-size: 0.8rem;
-    color:#999;
+    color: #999;
 }
