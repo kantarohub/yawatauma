@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDIO 3i Purpleball</title>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
+    <!-- HTMLのhead内にこれを書く -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- タイトル -->
+    <h1>八幡馬</h1>
+
+    <!-- 3Dモデル -->
+    <model-viewer 
+        src="images/eto_yawatauma_full size.glb" 
+        ios-src="images/eto_yawatauma_full size.usdz"
+        ar ar-modes="webxr scene-viewer quick-look"
+        orientation="0deg 0deg 0deg"
+        auto-rotate camera-controls 
+        loading="eager">
+        <div slot="poster" style="display: flex; justify-content: center; align-items: center; height: 100%;">
+            <p>3Dモデルを読み込み中...</p>
+        </div>
+    </model-viewer>
+
+     <footer>
+        <p>&copy; 2026 3i.野村貫太郎事務所</p>
+    </footer>
+
+</body>
+</html>
