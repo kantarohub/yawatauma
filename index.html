@@ -44,8 +44,13 @@
     </model-viewer>
 
      <footer>
-        <p>&copy; 2026 3i.野村貫太郎事務所</p>
-    </footer>
+     <p>&copy; <span id="current-year"></span> 3i.野村貫太郎事務所</p>
+     </footer>
+
+     <script>
+     document.getElementById('current-year').textContent = new Date().getFullYear();
+     </script>
+
 
 </body>
 </html>
