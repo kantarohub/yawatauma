@@ -12,6 +12,7 @@
     <!-- タイトル -->
     <h1>八幡馬</h1>
 
+    <!-- 操作方法ガイド -->
     <div class="guide-container">
         <h2>💡 ARモードでの操作方法（iPhone / iPad）</h2>
         <div class="guide-grid">
@@ -43,14 +44,30 @@
         </div>
     </model-viewer>
 
-     <footer>
-     <p>&copy; <span id="current-year"></span> 3i.野村貫太郎事務所</p>
-     </footer>
+    <!-- 【新規追加】AR体験方法 -->
+    <section class="ar-steps">
+        <h3>📱 スマートフォンでのAR体験方法</h3>
+        <ol>
+            <li><strong>ARモードを起動:</strong> 3Dモデル内（または右下）に表示される「AR（またはキューブ型のアイコン）」ボタンをタップします。[cite: 1]</li>
+            <li><strong>空間を認識させる:</strong> カメラが起動したら、配置する場所にゆっくりスマホを向けます。自動的に位置が認識され、モデルが配置されます。</li>
+    </section>
 
-     <script>
-     document.getElementById('current-year').textContent = new Date().getFullYear();
-     </script>
+    <!-- 【新規追加】ご利用前の注意点 -->
+    <section class="ar-notes">
+        <h3>⚠️ ご利用前の注意点</h3>
+        <ul>
+            <li><strong>推奨ブラウザ:</strong> 必ず <strong>Safari</strong>（iPhone）または <strong>Chrome</strong>（Android）で開いてください。[cite: 1]</li>
+            <li><strong>SNSアプリからのアクセス:</strong> LINEやInstagram等のアプリ内画面ではAR機能が動きません。画面右上（または右下）にある「…（3点リーダー）」をタップし、「Safariで開く」または「ブラウザで開く」を選択してからお楽しみください。[cite: 1]</li>
+            <li><strong>Android端末をご利用の方へ:</strong> 一部の機種では、初回のみGoogleのARアプリ（Google Play開発者サービス(AR)）のインストールを求められる場合があります。画面の指示に従って進めてください。[cite: 1]</li>
+        </ul>
+    </section>
 
+    <footer>
+        <p>&copy; <span id="current-year"></span> 3i.野村貫太郎事務所</p>
+    </footer>
 
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
